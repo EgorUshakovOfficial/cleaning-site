@@ -3,7 +3,6 @@ body{
 	font-family: san-serif;
 	font-size: 1rem;
 	background: rgba(42, 45, 48);
-/*	background: black;*/
 }
 
 *{
@@ -24,6 +23,7 @@ mark{
 	font-weight: bolder;
 }
 
+/* Logo and navbar */
 .upper-container{
 	background: rgba(42, 45, 48, 0.9);
 	position: fixed;
@@ -55,6 +55,7 @@ mark{
 	border-radius: 5px;
 }
 
+/* Abous us, Serices, and contact*/
 #about-section, 
 #services-section, 
 #contact-section{
@@ -78,7 +79,7 @@ mark{
 }
 
 
-/* About us section*/
+
 #about-section h2{
 	font-size: 2rem;
 	font-weight: 100;
@@ -86,7 +87,6 @@ mark{
 }
 
 
-/* Services section*/
 #services-section p, 
 #contact-section p{
 	font-size: 1.3rem;
@@ -95,7 +95,7 @@ mark{
 	margin-right: 10px;
 }
 
-
+/* For mobile responsiveness */
 @media(max-width: 420px){
 	.upper-container{
 		flex-direction: column;
@@ -126,4 +126,3 @@ mark{
 		font-size: 1.1rem;
 	}
 }
-

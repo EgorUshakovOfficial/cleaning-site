@@ -1,0 +1,129 @@
+/* Global */
+body{
+	font-family: san-serif;
+	font-size: 1rem;
+	background: rgba(42, 45, 48);
+/*	background: black;*/
+}
+
+*{
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+	font-size: 1.2rem;
+	color: white;
+}
+
+a:hover{
+	opacity: 0.6;
+}
+
+mark{
+	font-weight: bolder;
+}
+
+.upper-container{
+	background: rgba(42, 45, 48, 0.9);
+	position: fixed;
+	display: flex;
+	width: 100%;
+	top: 0;
+	left: 0;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.container{
+	width: 80%;
+	margin: 75px auto;
+	overflow: hidden;
+}
+
+.nav-bar{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.logo{
+	background: url('../logo.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 75px;
+	height: 75px;
+	border-radius: 5px;
+}
+
+#about-section, 
+#services-section, 
+#contact-section{
+	background: yellow;
+	border: 10px solid black;
+	margin-bottom: 5px;
+}
+
+#about-section h1, 
+#services-section h2, 
+#contact-section h1 {
+	text-align: center;
+	font-weight: 100;
+	font-size: 2rem;
+}
+
+.introduction li, 
+#services-section .includes li{
+	font-size: 1.3rem;
+	text-align: justify;
+}
+
+
+/* About us section*/
+#about-section h2{
+	font-size: 2rem;
+	font-weight: 100;
+	text-align: center;
+}
+
+
+/* Services section*/
+#services-section p, 
+#contact-section p{
+	font-size: 1.3rem;
+	text-align: justify;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+
+@media(max-width: 420px){
+	.upper-container{
+		flex-direction: column;
+	}
+
+	.nav-bar{
+		width: 100%;
+		grid-template-columns: auto;
+		grid-template-rows: 1fr 1fr 1fr;
+	}
+
+	.nav-bar a{
+		border: 2px solid black;
+		text-align: center;
+		padding: 5px;
+	}
+
+	.container{
+		width: 90%;
+		margin-top: 180px;
+	}
+
+	.introduction li{
+		margin-right: 5px;
+	}
+
+	p, li{
+		font-size: 1.1rem;
+	}
+}
+

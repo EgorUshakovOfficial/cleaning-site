@@ -1,4 +1,9 @@
 /* Global */
+
+html{
+	scroll-behavior: smooth;
+}
+
 body{
 	font-family: san-serif;
 	font-size: 1rem;
@@ -142,6 +147,8 @@ mark{
 	display: flex;
 	flex-direction: column;
 	background: black;
+	border: none;
+	border-radius: 10px;
 }
 
 #submit{
@@ -163,8 +170,15 @@ mark{
 
 /* Mobile responsiveness */
 @media(max-width: 420px){
+
 	.upper-container{
 		flex-direction: column;
+	}
+
+	.includes{
+		grid-template-rows: 1fr 1fr 1fr 1fr; 
+		grid-template-columns: auto;
+		min-height: 100vh;
 	}
 
 	.nav-bar{

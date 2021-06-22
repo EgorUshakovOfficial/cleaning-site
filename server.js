@@ -18,6 +18,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 app.use(express.static(path.join(__dirname, '/public'))); 
 
+
 // Routes 
 app.get('/', (req, res) =>{
 	res.render('index'); 
@@ -46,7 +47,7 @@ app.post('/', (req, res) => {
 	// Send mail 
 	let info = transporter.sendMail({
 		from: process.env.EMAIL_NAME, 
-		to:'egorushakov13@gmail.com', 
+		to:'bqueenathome@yahoo.ca', 
 		subject:'New client', 
 		html:`
 			<div>
@@ -64,7 +65,7 @@ app.post('/', (req, res) => {
 		err ? console.log(err) : console.log('Email sent!')
 	})
 
-	// Redirect home 
+	// Redirect back to home
 	res.redirect('/');
 
 })

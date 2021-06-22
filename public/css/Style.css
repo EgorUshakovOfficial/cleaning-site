@@ -7,7 +7,7 @@ html{
 body{
 	font-family: san-serif;
 	font-size: 1rem;
-	background: rgba(42, 45, 48);
+	background: rgb(25, 49, 189);
 }
 
 *{
@@ -79,9 +79,9 @@ mark{
 
 .includes{
 	display: grid;
-	grid-template-rows: 1fr 1fr; 
+	grid-template-rows: grid-auto-rows; 
 	grid-template-columns: 1fr 1fr;
-	min-height: 75vh;
+	min-height: 200vh;
 }
 
 .service-picture{
@@ -149,6 +149,7 @@ mark{
 	background: black;
 	border: none;
 	border-radius: 10px;
+	margin-bottom: 10px;
 }
 
 #submit{
